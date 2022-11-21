@@ -35,5 +35,10 @@ namespace Environment {
         private static void install_dependencies() {
             feature("Features.install_dependencies", DependenciesManager.install_dependencies);
         }
+
+        [MenuItem("Tools/Manifest/hard install dependencies")]
+        private static void hard_install_dependencies() {
+            DependenciesManager.install_dependencies();
+        }
     }
 }
